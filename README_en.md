@@ -41,4 +41,3 @@ Seam Carving for Content Aware Image Reduction
 - numpy
 - imageio
 - matplotlib
-- scipy

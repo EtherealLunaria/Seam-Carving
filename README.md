@@ -41,4 +41,3 @@
 - numpy
 - imageio
 - matplotlib
-- scipy
