@@ -5,38 +5,38 @@
 </div>
 
 # Seam Carving
-基于内容的图像缩放算法
+Seam Carving for Content Aware Image Reduction
 
-## 算法概览
-1. 计算图像的能量图
-2. 通过能量图计算代价图以及路径图
-3. 通过代价图以及路径图寻找能量最低的seam
-4. 重复上述步骤
-5. 旋转图片对高进行缩放
+## Algorithm Overview
+1. Calculate energy map
+2. Build accumulated cost matrix using forward energy
+3. Find and remove minimum seam from top to bottom edge
+4. Repeat step 1 - 3 until achieving targeting width 
+5. Rotate image and repeat step 1 - 4 for vertical resizing
 
-## 结果展示
+## Result
 <div>
   <br/>
-  <b>实例图(466*700)</b>
+  <b>Example image(466*700)</b>
   <br/>
   <br/>
   <kbd><img src="./example.png"></kbd>
   <br/>
   <br/>
-  <b>缩放至400*650</b>
+  <b>Crop to 400*650</b>
   <br/>
   <br/>
   <kbd><img src="./example_400_650.png"></kbd>
   <br/>
   <br/>
-  <b>缩放至250*400</b>
+  <b>Crop to 250*400</b>
   <br/>
   <br/>
   <kbd><img src="./example_250_400.png"></kbd>
   <br/>
 </div>
 
-## 运行条件
+## Required Environment
 - scipy
 - numpy
 - imageio
